@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Calculadora IMC</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="script.js"></script>
+	<style type="text/css">
+
+		#principal{
+			/*#0066ff*/
+			background-image: linear-gradient(to bottom, #2952a3, black 110%);
+			font-family: "Arial", serif;
+			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			margin-top: 60px; 
+  			margin-bottom: 109px;
+		}
+
+		#botao{
+			background-color: #00ff00;
+			color: white;
+			width: 250px;
+			height: 70px;
+			border: none;
+			border-radius: 20px;
+			text-align: center;
+			font-size: 25px;
+			margin-top: 70px;
+			outline: none;
+			cursor: pointer;
+		}
+
+		.entradas{
+			width: 250px;
+			height: 70px;
+			border: none;
+			border-radius: 20px;
+			text-align: center;
+			font-size: 20px;
+			outline: none;
+		}
+
+		.texto{
+			color: white;
+			font-size: 30px;
+		}
+
+	</style>
+
+</head>
+
+<body id="principal">
+
+	<form method="POST" onsubmit="return CalcularIMC()">
+
+		<h2 class="texto">Digite seu peso: </h2>
+		<input class="entradas" type="text" name="peso" id="peso" placeholder="Exemplo: 65" /> <br/><br/>
+
+		<h2 class=" texto">Digite sua altura: </h2> 
+		<input class="entradas" type="text" name="altura" id="altura" placeholder="Exemplo: 1.70" /> <br/><br/>
+
+		<input id="botao" type="submit" value="Calcular IMC"/>
+
+	</form>
+
+	<div id="resultado"></div>
+
+</body>
+
+</html>
